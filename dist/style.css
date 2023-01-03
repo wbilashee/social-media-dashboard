@@ -378,4 +378,28 @@ main {
 }
 .overview__card .stat-label .red-text {
   color: hsl(356deg, 69%, 56%);
+}
+
+.footer {
+  text-align: center;
+  transform: translateY(-1.25rem);
+}
+@media (min-width: 40em) {
+  .footer {
+    transform: translateY(-2.75rem);
+  }
+}
+.footer__attribution {
+  padding: 1.25rem 0;
+  font-size: 0.815rem;
+  color: var(--small-text);
+}
+@media (min-width: 40em) {
+  .footer__attribution {
+    padding: 0;
+    font-size: 0.875rem;
+  }
+}
+.footer__attribution a {
+  color: var(--small-text);
 }/*# sourceMappingURL=style.css.map */

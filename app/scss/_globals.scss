@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+:root {
+  --bg: hsl(0, 0%, 100%);
+  --top-bg-pattern: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --small-text: hsl(228, 12%, 44%);
+  --bold-text: hsl(230, 17%, 14%);
+}
+
+.dark {
+  --bg: hsl(230, 17%, 14%);
+  --top-bg-pattern: hsl(230, 17%, 14%);
+  --card-bg: hsl(228, 28%, 20%);
+  --small-text: hsl(228, 34%, 66%);
+  --bold-text: hsl(0, 0%, 100%);
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -14,9 +30,33 @@ html {
 }
 
 body {
+  background: var(--bg);
   font-family: "Inter", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 68.25rem;
+}
+
+// Flex
+.flex {
+  display: flex;
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
 }

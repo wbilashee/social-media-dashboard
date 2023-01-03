@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 :root {
   --bg: hsl(0, 0%, 100%);
-  --top-bg-pattern: hsl(225, 100%, 98%);
   --card-bg: hsl(227, 47%, 96%);
-  --small-text: hsl(228, 12%, 44%);
-  --bold-text: hsl(230, 17%, 14%);
+  --hover-color: hsl(228, 33%, 91%);
+  --primary-color: hsl(230, 17%, 14%);
+  --top-bg-pattern: hsl(225, 100%, 98%);
+  --secondary-color: hsl(228, 12%, 44%);
 }
 
 .dark {
-  --bg: hsl(230, 17%, 14%);
-  --top-bg-pattern: hsl(230, 17%, 14%);
+  --bg: hsl(225, 17%, 14%);
   --card-bg: hsl(228, 28%, 20%);
-  --small-text: hsl(228, 34%, 66%);
-  --bold-text: hsl(0, 0%, 100%);
+  --hover-color: hsl(228, 25%, 27%);
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(228, 34%, 66%);
+  --top-bg-pattern: hsl(232deg 20% 16%);
 }
 
 html {
@@ -26,6 +28,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  transition: all 300ms ease-in-out;
 }
 
 body {
@@ -103,7 +106,7 @@ main {
 }
 .header__title h1 {
   font-size: 1.5rem;
-  color: var(--bold-text);
+  color: var(--primary-color);
 }
 @media (min-width: 40em) {
   .header__title h1 {
@@ -114,7 +117,7 @@ main {
   font-weight: bold;
   font-size: 0.9rem;
   margin-top: 0.25rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
 }
 @media (min-width: 40em) {
   .header__title p {
@@ -143,12 +146,11 @@ main {
   font-weight: bold;
   margin-right: 1rem;
   font-size: 0.875rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
 }
 .header__theme .toggle-btn {
   width: 3rem;
   height: 1.5rem;
-  transition: unset;
   background: hsl(230deg, 22%, 74%);
   border-radius: 0.75rem;
   justify-content: flex-end;
@@ -167,7 +169,6 @@ main {
   width: 1.125rem;
   height: 1.125rem;
   margin: 0 0.25rem;
-  transition: unset;
   border-radius: 50%;
   background-color: hsl(0deg, 0%, 100%);
 }
@@ -194,6 +195,9 @@ main {
   cursor: pointer;
   border-radius: 0.3125rem;
   background: var(--card-bg);
+}
+.overall__card:hover {
+  background: var(--hover-color);
 }
 .overall__card .bar {
   width: 100%;
@@ -233,13 +237,13 @@ main {
 .overall__card .profile p {
   font-weight: bold;
   font-size: 0.75rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
 }
 .overall__card h1 {
   font-size: 3.5rem;
   margin-top: 1.125rem;
   letter-spacing: -2px;
-  color: var(--bold-text);
+  color: var(--primary-color);
 }
 @media (min-width: 40em) {
   .overall__card h1 {
@@ -248,7 +252,7 @@ main {
 }
 .overall__card h1 + p {
   font-size: 0.75rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
   letter-spacing: 0.3125rem;
   text-transform: uppercase;
 }
@@ -287,7 +291,7 @@ main {
 }
 .overview h1 {
   font-size: 1.5rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
 }
 @media (min-width: 40em) {
   .overview h1 {
@@ -316,6 +320,9 @@ main {
   background: var(--card-bg);
   padding: 0.3125rem 2rem 1.125rem 1.5rem;
 }
+.overview__card:hover {
+  background: var(--hover-color);
+}
 @media (min-width: 40em) {
   .overview__card {
     padding: 0.3125rem 1.6875rem 1.125rem 1.5rem;
@@ -332,7 +339,7 @@ main {
 .overview__card .activity p {
   font-weight: bold;
   font-size: 0.875rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
 }
 @media (min-width: 40em) {
   .overview__card .activity p {
@@ -349,7 +356,7 @@ main {
 }
 .overview__card .stat h2 {
   font-size: 2rem;
-  color: var(--bold-text);
+  color: var(--primary-color);
 }
 @media (min-width: 40em) {
   .overview__card .stat h2 {
@@ -392,7 +399,7 @@ main {
 .footer__attribution {
   padding: 1.25rem 0;
   font-size: 0.815rem;
-  color: var(--small-text);
+  color: var(--secondary-color);
 }
 @media (min-width: 40em) {
   .footer__attribution {
@@ -401,5 +408,5 @@ main {
   }
 }
 .footer__attribution a {
-  color: var(--small-text);
+  color: var(--secondary-color);
 }/*# sourceMappingURL=style.css.map */

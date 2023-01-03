@@ -27,7 +27,7 @@
 
     h1 {
       font-size: 1.5rem;
-      color: var(--bold-text);
+      color: var(--primary-color);
 
       @include breakpoint-up(medium) {
         font-size: 1.625rem;
@@ -38,7 +38,7 @@
       font-weight: bold;
       font-size: 0.9rem;
       margin-top: 0.25rem;
-      color: var(--small-text);
+      color: var(--secondary-color);
 
       @include breakpoint-up(medium) {
         font-size: 0.8375rem;
@@ -68,13 +68,12 @@
       font-weight: bold;
       margin-right: 1rem;
       font-size: 0.875rem;
-      color: var(--small-text);
+      color: var(--secondary-color);
     }
 
     .toggle-btn {
       width: 3rem;
       height: 1.5rem;
-      transition: unset;
       background: $light;
       border-radius: 0.75rem;
       justify-content: flex-end;
@@ -97,7 +96,6 @@
       width: 1.125rem;
       height: 1.125rem;
       margin: 0 0.25rem;
-      transition: unset;
       border-radius: 50%;
       background-color: $white;
     }

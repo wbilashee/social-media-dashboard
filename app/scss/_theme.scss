@@ -1,0 +1,17 @@
+:root {
+  --bg: hsl(0, 0%, 100%);
+  --card-bg: hsl(227, 47%, 96%);
+  --hover-color: hsl(228, 33%, 91%);
+  --primary-color: hsl(230, 17%, 14%);
+  --top-bg-pattern: hsl(225, 100%, 98%);
+  --secondary-color: hsl(228, 12%, 44%);
+}
+
+.dark {
+  --bg: hsl(225, 17%, 14%);
+  --card-bg: hsl(228, 28%, 20%);
+  --hover-color: hsl(228, 25%, 27%);
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(228, 34%, 66%);
+  --top-bg-pattern: hsl(232deg 20% 16%);
+}

@@ -9,16 +9,15 @@
   &__attribution {
     padding: 1.25rem 0;
     font-size: 0.815rem;
+    color: var(--secondary-color);
 
     @include breakpoint-up(medium) {
       padding: 0;
       font-size: 0.875rem;
     }
 
-    color: var(--small-text);
-
     a {
-      color: var(--small-text);
+      color: var(--secondary-color);
     }
   }
 }

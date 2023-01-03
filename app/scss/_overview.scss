@@ -7,7 +7,7 @@
 
   h1 {
     font-size: 1.5rem;
-    color: var(--small-text);
+    color: var(--secondary-color);
 
     @include breakpoint-up(medium) {
       font-size: 1.4375rem;
@@ -35,6 +35,10 @@
     background: var(--card-bg);
     padding: 0.3125rem 2rem 1.125rem 1.5rem;
 
+    &:hover {
+      background: var(--hover-color);
+    }
+
     @include breakpoint-up(medium) {
       padding: 0.3125rem 1.6875rem 1.125rem 1.5rem;
     }
@@ -49,7 +53,7 @@
       p {
         font-weight: bold;
         font-size: 0.875rem;
-        color: var(--small-text);
+        color: var(--secondary-color);
 
         @include breakpoint-up(medium) {
           font-size: 0.8325rem;
@@ -68,7 +72,7 @@
     .stat {
       h2 {
         font-size: 2rem;
-        color: var(--bold-text);
+        color: var(--primary-color);
 
         @include breakpoint-up(medium) {
           font-size: 1.875rem;

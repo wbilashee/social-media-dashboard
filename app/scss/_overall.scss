@@ -16,6 +16,10 @@
     border-radius: 0.3125rem;
     background: var(--card-bg);
 
+    &:hover {
+      background: var(--hover-color);
+    }
+
     .bar {
       width: 100%;
       height: 0.25rem;
@@ -58,7 +62,7 @@
       p {
         font-weight: bold;
         font-size: 0.75rem;
-        color: var(--small-text);
+        color: var(--secondary-color);
       }
     }
 
@@ -66,7 +70,7 @@
       font-size: 3.5rem;
       margin-top: 1.125rem;
       letter-spacing: -2px;
-      color: var(--bold-text);
+      color: var(--primary-color);
 
       @include breakpoint-up(medium) {
         font-size: 3.3125rem;
@@ -75,7 +79,7 @@
 
     h1 + p {
       font-size: 0.75rem;
-      color: var(--small-text);
+      color: var(--secondary-color);
       letter-spacing: 0.3125rem;
       text-transform: uppercase;
 

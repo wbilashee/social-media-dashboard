@@ -44,6 +44,14 @@ a {
   max-width: 68.25rem;
 }
 
+main {
+  transform: translateY(-2.5rem);
+
+  @include breakpoint-up(medium) {
+    transform: translateY(-6.5rem);
+  }
+}
+
 // Flex
 .flex {
   display: flex;
@@ -58,5 +66,14 @@ a {
 
   &-jc-sb {
     justify-content: space-between;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+
+  &-ai-c {
+    align-items: center;
   }
 }

@@ -43,6 +43,15 @@ a {
   max-width: 68.25rem;
 }
 
+main {
+  transform: translateY(-2.5rem);
+}
+@media (min-width: 40em) {
+  main {
+    transform: translateY(-6.5rem);
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -54,6 +63,13 @@ a {
 }
 .flex-jc-sb {
   justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+.grid-ai-c {
+  align-items: center;
 }
 
 .header {
@@ -157,4 +173,106 @@ a {
 }
 .dark .header__theme:hover p {
   color: hsl(0deg, 0%, 100%);
+}
+
+.overall {
+  text-align: center;
+  grid-template-columns: 1fr;
+  gap: 1.5rem 1.875rem;
+}
+@media (min-width: 40em) {
+  .overall {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .overall {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.overall__card {
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  background: var(--card-bg);
+}
+.overall__card .bar {
+  width: 100%;
+  height: 0.25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.overall__card .bar-facebook {
+  background: hsl(208deg, 92%, 53%);
+}
+.overall__card .bar-twitter {
+  background: hsl(203deg, 89%, 53%);
+}
+.overall__card .bar-instagram {
+  background: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
+}
+.overall__card .bar-youtube {
+  background: hsl(348deg, 97%, 39%);
+}
+.overall__card .profile {
+  margin-top: 1.875rem;
+}
+@media (min-width: 40em) {
+  .overall__card .profile {
+    margin-top: 1.625rem;
+  }
+}
+.overall__card .profile img {
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+@media (min-width: 40em) {
+  .overall__card .profile img {
+    width: 1.125rem;
+  }
+}
+.overall__card .profile p {
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: var(--small-text);
+}
+.overall__card h1 {
+  font-size: 3.5rem;
+  margin-top: 1.125rem;
+  letter-spacing: -2px;
+  color: var(--bold-text);
+}
+@media (min-width: 40em) {
+  .overall__card h1 {
+    font-size: 3.3125rem;
+  }
+}
+.overall__card h1 + p {
+  font-size: 0.75rem;
+  color: var(--small-text);
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+}
+@media (min-width: 40em) {
+  .overall__card h1 + p {
+    letter-spacing: 0.25rem;
+  }
+}
+.overall__card .stat {
+  padding: 1.5rem 0;
+}
+@media (min-width: 40em) {
+  .overall__card .stat {
+    padding: 1.375rem 0;
+  }
+}
+.overall__card .stat img {
+  margin-right: 0.3125rem;
+}
+.overall__card .stat p {
+  color: hsl(163deg, 72%, 41%);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.overall__card:last-child .stat p {
+  color: #dc414c;
 }/*# sourceMappingURL=style.css.map */
